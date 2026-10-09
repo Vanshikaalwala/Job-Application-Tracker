@@ -31,7 +31,7 @@ const ColumnSchema = new Schema<IColumn>({
     jobApplications:[
         {
             type: Schema.Types.ObjectId,
-            ref: "jobApplications"
+            ref: "JobApplication"
         }
     ],
     },

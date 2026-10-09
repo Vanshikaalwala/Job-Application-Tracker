@@ -7,13 +7,13 @@ import {initializeUserBoard} from "../init-user-board"
 
 const client = new MongoClient(process.env.MONGODB_URI!);
 
-client.on("serverHeartbeatFailed", (event) => {
-    console.error("MongoDB heartbeat failed:", event);
-});
+// client.on("serverHeartbeatFailed", (event) => {
+//     console.error("MongoDB heartbeat failed:", event);
+// });
 
-client.on("serverHeartbeatSucceeded", () => {
-    console.log("MongoDB heartbeat succeeded");
-});
+// client.on("serverHeartbeatSucceeded", () => {
+//     console.log("MongoDB heartbeat succeeded");
+// });
 
 const db = client.db();
 

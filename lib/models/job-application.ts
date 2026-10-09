@@ -42,7 +42,7 @@ const JobApplicationSchema = new Schema<IJobApplication>({
 
     columnId:{
         type: Schema.Types.ObjectId,
-        ref: "Columun",
+        ref: "Column",
         required: true,
         index: true,
     },
